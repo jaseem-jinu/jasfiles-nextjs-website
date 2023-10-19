@@ -1,0 +1,318 @@
+
+
+.page_title h1{
+    font-size:42px;
+    line-height: 42px;
+    color: 000000;
+    font-family: 'Gotham';
+    font-weight: 200;
+    margin: 50px 0;
+}
+.page_title span{
+    font-weight:900;
+}
+.banner_section{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:809px;
+}
+.banner_section p{
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 45px;
+    margin: 0 0 80px 0;
+}
+.banner_section p span{
+    display: block;
+    font-weight: 900;
+}
+.banner_section .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+.what_we_do_list{
+    background:#111439;
+    position: relative;
+    padding-bottom: 150px;
+    overflow: hidden;
+}
+
+.what_we_do_list .block-chain-service-main{
+           min-height: 800px;
+}
+
+.list_container{
+    position: relative;
+}
+.list_container::after{
+    position: absolute;
+    left:-70px;
+    right: 0px;
+    top: 0px;
+    margin: auto;
+    content: "";
+    width: 1200px;
+    height: 1887px;
+    z-index: 1;
+    background-image: url(/images/wwd_shape.png);
+    background-repeat: no-repeat;
+}
+.what_we_do_list h2{
+    color:#289784;
+    font-size: 42px;
+    line-height: 42px;
+    font-family: 'Gotham';
+    letter-spacing: -4px;
+    margin-bottom: 20px;
+}
+.what_we_do_list h2 span{
+    font-weight: bold;
+    display: block;
+    letter-spacing: -1px;
+}
+.what_we_do_list p{
+    color: #9a9a9a;
+    font-size: 15px;
+    line-height: 24px;
+}
+.wwd_list{
+    width: 100%;
+}
+
+.wwd_list .left_list{
+    width: 50%;
+    position: relative;
+    padding-top: 250px;
+    position: absolute;
+    left: 0px;
+}
+
+.wwd_list .right_list{
+    width: 50%;
+    padding-top: 250px;
+    position: relative;
+    z-index: 9999;
+}
+.what_we_do_list ul{
+    list-style: none;
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+.what_we_do_list ul li{
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-right: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+.what_we_do_list ul li:nth-child(2n+2){
+    margin-right: 0px;
+}
+/* .what_we_do_list ul li a{
+    border: 1px solid #2bb994;
+    border-radius: 30px;
+    display: block;
+    padding: 15px 25px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Gotham';
+    font-weight: 300;
+} */
+
+.what_we_do_list ul li a{
+    box-sizing: border-box;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    padding-right: 30px;
+    position: relative;
+    list-style: none;
+    font-size: 21px;
+    line-height: 24px;
+    color: #289784;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'metropolis-bold';
+    position: relative;
+}
+
+.what_we_do_list ul li a::after {
+    content: "";
+    width: 11px;
+    height: 21px;
+    background-image: url(/images/service-list-arrow.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 13px;
+    top: 0;
+    bottom: 0px;
+    margin: auto;
+  }
+
+.what_we_do_list .container{
+    max-width: 1300px;
+}
+
+.list_container .wwd_list:nth-child(2n+2) .right_list{
+    order: 1;
+}
+.list_container .wwd_list:nth-child(2n+2) .left_list{
+    order: 2;
+}
+
+.hme_service_section{
+    background: #151847;
+    padding: 120px 0;
+}
+
+.hme_service_section h2.main-title{
+    text-align: center;
+}
+.hme_service_section ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hme_service_section .service_texts{
+    margin-left: 55px;
+}
+.hme_service_section  .service_texts h3{
+    font-size: 24px;
+    color: #fff;
+    line-height: 26px;
+    font-family: 'Gotham';
+    margin-bottom: 0;
+}
+.hme_service_section  .service_texts h3 span{
+    font-weight: bold;
+    display: block;
+}
+.hme_service_section  .service_left{
+    display: flex;
+    align-items: center;
+
+}
+.hme_service_section ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    padding: 0;
+}
+.hme_service_section ul li{
+    width: 45%;
+    background: #161a55;
+    padding: 35px 60px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.hme_service_section ul li::before{
+    background: url(/images/line_bg.png) no-repeat;
+    width: 467px;
+    height: 1px;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hme_service_section ul li::after{
+    background: url(/images/line_bg.png) no-repeat;
+    width: 467px;
+    height: 1px;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.hme_service_section ul li a{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.wwd_list .block-chain-service-main.service-right-detail .main-block-chain-service-content {
+    float: right;
+}
+
+.wwd_list  .block-chain-service-main .main-block-chain-service-content {
+    max-width: 660px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .what_we_do_list{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+.list_container::after{
+    background:none;
+}
+.wwd_list .right_list,.wwd_list .left_list{
+    padding-top: 90px;
+}
+}
+
+@media only screen and (max-width:767px) {
+    .wwd_list{
+        flex-wrap: wrap;
+    }
+    .wwd_list .left_list{
+        width: 100%;
+    }
+    .wwd_list .right_list{
+        width: 100%;
+    }
+    .wwd_list .right_list{
+        padding-top: 20px;
+    }
+    .list_container .wwd_list:nth-child(2n+2) .right_list{
+        order: 2;
+    }
+    .list_container .wwd_list:nth-child(2n+2) .left_list{
+        order: 1;
+    }
+    .banner_section{
+        height: 490px;
+    }
+    .page_title h1{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .banner_section p br{
+        display: none;
+    }
+    .banner_section p{
+        font-size: 28px;
+        line-height: 35px;
+        margin: 0 0 35px 0;
+    }
+    .what_we_do_list h2{
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -1px;
+    }
+    .what_we_do_list ul li{
+        width: 100%;
+    }
+    .what_we_do_list ul{
+        margin: 30px 0 0 0;
+    }
+    .what_we_do_list{
+        padding-bottom: 60px;
+    }
+
+}

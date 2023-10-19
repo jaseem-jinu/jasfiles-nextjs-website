@@ -1,0 +1,260 @@
+.page_title h1 {
+  font-size: 42px;
+  line-height: 42px;
+  color: 000000;
+  font-family: "Gotham";
+  font-weight: 200;
+  margin: 50px 0;
+  text-transform: uppercase;
+}
+.page_title span {
+  font-weight: 900;
+}
+
+.banner_section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.banner_section p {
+  color: #ffffff;
+  font-family: 'metropolis-thin';
+  font-size: 40px;
+  line-height: 45px;
+  margin: auto;
+  text-transform: uppercase;
+}
+.banner_section p span {
+  display: inline-block;
+  font-family: 'metropolis-extrabold';
+}
+
+
+
+
+
+.banner_section h1 {
+  color: #ffffff;
+  font-family: 'metropolis-thin';
+  font-size: 36px;
+  line-height: 45px;
+  margin: 0 0 80px 0;
+  text-transform: uppercase;
+}
+
+.blog-banner.banner_section h1{ color: #000;}
+
+
+.banner_section h1 span {
+  display: inline-block;
+  font-family: 'metropolis-extrabold';
+}
+
+
+
+.banner_section .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* --------------------------------------------------- */
+.product_details{
+      padding: 100px 0;
+}
+.product_details .container{
+  width: 1400px;
+  margin: auto;
+}
+
+.container h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.offer_holder{
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+.img_holder{
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+.just_arriv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, #7cb33e, #0a0a0a);
+  padding: 10px;
+  margin: 20px 0;
+
+}
+.just_arriv h3 {
+    width: 240px;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-family: "Gotham";
+    font-style: italic;
+    position: relative;
+
+}
+.just_arriv h3:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    right: 20px;
+    top: 0px;
+}
+.just_arriv p {
+    margin-bottom: 0px;
+    font-family: 'Gotham Book';
+    font-size: 16px;
+    line-height: 26px;
+     color: #ffffff;
+     font-family: "Gotham";
+}
+.product_details ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0 -1%;
+}
+.product_details ul li {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px 1%;
+    padding: 20px;
+    width: 23%;
+    text-align: center;
+}
+
+.product_list img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product_list h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 500;
+    font-family: "Gotham";
+}
+
+.product_list p {
+    font-size: 1.2rem;
+}
+
+.product_list .about_more_btn {
+  height: 50px;
+  line-height: 45px;
+  display: inline-block;
+  font-family: "Gotham";
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(to left, #7cb33e, #0a0a0a);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #122dff;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-size: 14px;
+  /* margin-top: 75px; */
+  min-width: 200px;
+  position: relative;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.about_more_btn span {
+  padding: 0px 30px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  /* background-color: #21245b; */
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.about_more_btn:hover {
+  color: #fff;
+}
+
+.about_more_btn span::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  /* background: #7db240; */
+  background: #000;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.about_more_btn span:hover {
+  padding: 0px;
+}
+
+.about_more_btn span:hover::after {
+  width: 100%;
+}
+        
+      
+
+
+#mob-nav .tab_content ul li a{background: transparent !important;}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  .banner_section {
+    height:450px;
+    padding:60px 0 20px 0;
+  }
+  .banner_section p {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 0 47px 0;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  
+}
+@media only screen and (max-width: 767px) {
+ 
+}
+
