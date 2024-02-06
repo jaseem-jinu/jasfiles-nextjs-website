@@ -13,7 +13,9 @@
     "navigator": "^1.0.1",
     "next": "13.5.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-countup": "^6.5.0",
+    "react-dom": "^18",
+    "use-count-up": "^3.0.1"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.22",

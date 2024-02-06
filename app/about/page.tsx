@@ -1,14 +1,15 @@
-
 import type { Metadata } from 'next'
 import React from 'react';
 import Image from 'next/image';
 import innerbanner from '@/public/images/who-we-are-banner.jpg';
 import styles from './About.module.css';
+import MultiCountUp from '../../component/MultiCountUp';
 
 export const metadata: Metadata = {
     title: 'About us',
     description: 'we are ready to create marvels design with your satisfaction',
 }
+
 
 function About() {
     return (
@@ -57,35 +58,10 @@ function About() {
                         <h2>Rooted in legacy.<br />
                             Driven by data.<br />
                             <span>Designed for real life.</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam ...</p>
+                        <p>Let jas design be your trusted partner in bringing your design dreams to reality. Explore the possibilities with us and elevate your brand through extraordinary design.</p>
                     </div>
                     <div className={styles.numbers_figures}>
-                        <h3>Numbers & Figures About <span>NUOX</span></h3>
-
-                        <div className={styles.counter_list}>
-                            <div className={styles.counter_list_item}>  <h1>counter_list-member</h1>
-                                <span className="plus-number"><b className="counter">70</b>+</span>
-                                <h4 className="counter-text">MEMBERS AND GROWING</h4>
-                                <span className="plus-mode first"></span>
-                            </div>
-                            <div className={styles.counter_list_item}> <h1>counter_list-year</h1>
-                                <span className="plus-number"><b className="counter">12</b>+</span>
-                                <h4 className="counter-text">YEARS</h4>
-                                <span className="plus-mode second"></span>
-                            </div>
-                            <div className={styles.counter_list_item}> <h1>counter_list-application</h1>
-                                <span className="plus-number"><b className="counter">200</b>+</span>
-                                <h4 className="counter-text">APPLICATIONS</h4>
-                                <span className="plus-mode third"></span>
-                            </div>
-                            <div className={styles.counter_list_item}> <h1>counter_list-serving</h1>
-                                <span className="plus-number"><b className="counter">8</b>+</span>
-                                <h4 className="counter-text">COUNTRIES SERVING</h4>
-                                <span className="plus-mode second"></span>
-                            </div>
-                        </div>
-
-
+                        <MultiCountUp />
                     </div>
                 </div>
             </section>

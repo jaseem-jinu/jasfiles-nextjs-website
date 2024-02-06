@@ -141,8 +141,8 @@
 
 .dark_blue_section {
   /* background: #fff; */
-  background: linear-gradient(to left, #0a0a0a, #f5f5f5);
-  padding: 200px 0 200px 0;
+  background: linear-gradient(to left, #2ab894, #f5f5f5);
+  padding: 100px 0 100px 0;
   position: relative;
 }
 
@@ -180,13 +180,13 @@
 }
 
 .dark_blue_section .content_block p {
-  color: #9a9a9a;
+  color: #000000;
   margin: 30px 0 20px 0;
   font-size: 15px;
 }
 
 .container .numbers_figures {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .container .numbers_figures h3 {
@@ -201,71 +201,75 @@
   font-weight: bold;
 }
 
-.counter_list{
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+
+.counter_list {
+    margin-top: 50px;
+    flex-wrap: wrap
 }
+
+.counter_list,.counter_list_item {
+    display: flex;
+    justify-content: flex-end
+}
+
+
 
 .counter_list_item {
-  display: flex;
-  line-height: 100px;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-  width: 100%;
+    line-height: 100px;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    width: 100%
 }
 
-.counter_list_item.counter_list-member {
-  justify-content: flex-start;
+.counter_list_item.counter_list_member {
+   justify-content: flex-start;
 }
 
-.counter_list-member .plus-number {
+.counter_list_member .plus_number {
   color: #2f346c;
 }
 
-.counter_list-member .plus-mode {
+.counter_list_member .plus_mode {
   width: 20%;
 }
 
-.counter_list-year .plus-number {
+.counter_list-year .plus_number {
   color: #1b75bc;
 }
 
-.counter_list-year .plus-mode {
+.counter_list-year .plus_mode {
   width: 11%;
 }
 
-.counter_list-application .plus-number {
+.counter_list-application .plus_number {
   color: #00a79d;
 }
 
-.counter_list-application .plus-mode {
+.counter_list-application .plus_mode {
   width: 50%;
 }
 
-.counter_list-serving .plus-number {
+.counter_list_serving .plus_number {
   color: #dddddd;
 }
 
-.counter_list-serving .plus-mode {
+.counter_list_serving .plus_mode {
   width: 18%;
 }
 
-.counter_list_item.counter_list-serving {
+.counter_list_item.counter_list_serving {
   margin-top: 100px;
 }
 
-.counter_list_item .plus-number {
+.counter_list_item .plus_number {
   display: inline;
   font-size: 130px;
   font-weight: bold;
   font-family: "Gotham";
 }
 
-.counter_list_item .counter-text {
-  color: #d0d0d0;
+.counter_list_item .counter_text {
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   font-family: "Gotham";
@@ -275,13 +279,13 @@
   line-height: 1;
 }
 
-.counter_list_item .plus-mode {
+.counter_list_item .plus_mode {
   height: 2px;
   position: relative;
-  background: rgba(144, 145, 163, 0.164);
+  background: rgb(255 255 255 / 25%)
 }
 
-.counter_list_item .plus-mode::before {
+.counter_list_item .plus_mode::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -294,14 +298,29 @@
   background-repeat: no-repeat !important;
 }
 
-.counter_list_item .plus-mode.second::before{
+.counter_list_item .plus_mode.second::before{
   background: url(/images/round.png);
 }
 
-.counter_list_item .plus-mode.third::before{
+.counter_list_item .plus_mode.third::before{
   background: url(/images/hexa-light.png);
 }
 
+.counter_list_application .plus_number {
+    color: #00a79d
+}
+
+.counter_list_application .plus_mode {
+    width: 50%
+}
+
+.counter_list_year .plus_number {
+    color: #1b75bc
+}
+
+.counter_list_year .plus_mode {
+    width: 11%
+}
 /* --------------------------------------------------- */
 
 .technology-slack {
@@ -564,7 +583,7 @@ span.wpcf7-not-valid-tip{display: none;}
     padding-right: 15%;
   }
 
-  .counter_list_item .plus-number {
+  .counter_list_item .plus_number {
     font-size: 75px;
     line-height: 1;
   }
@@ -597,7 +616,7 @@ span.wpcf7-not-valid-tip{display: none;}
     justify-content: flex-start;
   }
 
-  .counter_list_item.counter_list-serving {
+  .counter_list_item.counter_list_serving {
     margin-top: 0;
   }
 
@@ -705,13 +724,13 @@ span.wpcf7-not-valid-tip{display: none;}
   .join_us .join_us_right {
     width: 100%;
   }
-	.counter_list_item .plus-number {
+	.counter_list_item .plus_number {
     font-size: 35px;
 	}
-	.counter_list_item .counter-text {
+	.counter_list_item .counter_text {
     font-size: 12px;
 	}
-	.counter_list_item .plus-mode::before {
+	.counter_list_item .plus_mode::before {
     width: 15px;
     height: 15px;
     bottom: -7px;

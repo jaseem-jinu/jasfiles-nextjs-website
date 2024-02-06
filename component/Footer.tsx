@@ -11,7 +11,6 @@ const Footer = () => {
 
     useEffect(() => {
 
-
         // // Menu Toggle
         // jQuery('.menu-icon').on('click', function () {
         //     jQuery(this).toggleClass('open');

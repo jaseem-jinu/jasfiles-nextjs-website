@@ -1,6 +1,6 @@
 "use client"
 //import React from 'react'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image'
 import logo from '../public/images/logo.png'
@@ -11,6 +11,12 @@ import "aos/dist/aos.css";
 
 const Header = () => {
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     const menuButtonHandler = () => {
         // let menuIcon = document.getElementsByclassName('menu-icon');
         let menuIcon = document.querySelector(".menu-icon");
@@ -19,16 +25,25 @@ const Header = () => {
         body.classList.remove("menu-opn");
     }
 
+
     useEffect(() => {
         AOS.init({
             easing: 'ease-in-out-sine',
             duration: 700,
             once: true
         });
+
+        if (isOpen) {
+            document.body.classList.add('menu-opn');
+        } else {
+            document.body.classList.remove('menu-opn');
+        }
+
     });
 
     return (
         <React.Fragment>
+
             <header className="header">
                 <div className="container">
 
@@ -38,7 +53,7 @@ const Header = () => {
                         </Link>
                     </div>
 
-                    <div className="menu-icon">
+                    <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu} >
                         <div className="menu-bar">
                             <span />
                             <span />
@@ -47,13 +62,14 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <div className="main-nav">
+
+            <div className="main-nav" onClick={() => document.body.classList.remove('menu-opn')}>
                 <div className="container">
                     <nav className="main-navigation">
                         <ul>
                             <li><Link href="/about">About Us</Link></li>
-                            <li><Link href="#">Services</Link></li>
-                            <li><Link href="#">Blogs</Link></li>
+                            <li><Link href="/products">Services</Link></li>
+                            <li><Link href="#">Portfolio</Link></li>
                             <li><Link href="#">Contact</Link></li>
                         </ul>
                     </nav>
@@ -87,3 +103,4 @@ const Header = () => {
 }
 
 export default Header
+
